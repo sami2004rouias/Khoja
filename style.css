@@ -322,20 +322,26 @@ button.white{
     background-image: url(img/banner/b10.jpg);
 }
 #sm-banner h4{
-    color: #fff;
+    color: #000;
     font-size: 20px;
     font-weight: 300;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #sm-banner h2{
-    color: #fff;
+    color: #000;
     font-size: 28px;
     font-weight: 800;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #sm-banner span{
-    color: #fff;
+    color: #000;
     font-size: 14px;
     font-weight: 500;
     padding-bottom: 15px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #sm-banner .banner-box:hover button{
     background-color: #6F3619;
@@ -362,21 +368,27 @@ button.white{
 }
 #banner3 .banner-box2{
     background-image: url(img/banner/b4.jpg);
+    background-position: 10% 80%;
 
 }
 #banner3 .banner-box3{
     background-image: url(img/banner/b18.jpg);
+    background-position: bottom;
 
 }
 #banner3 h2{
-    color: #fff;
+    color: #6F3619;
     font-weight: 900;
     font-size: 22px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #banner3 h3{
     color: #ec544e;
     font-weight: 800;
     font-size: 15px;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 #newslatter{
     display: flex;
@@ -482,6 +494,7 @@ footer .copyright{
 /* Shop page */
 #page-header{
     background-image: url(img/banner/b1.jpg);
+    background-position: center;
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -583,7 +596,8 @@ footer .copyright{
 }
 /* Blog page */
 #page-header.blog-header{
-    background-image: url(img/banner/b19.jpg);   
+    background-image: url(img/banner/b19.jpg);
+    background-position: 10% 60%;
 }
 #blog{
     padding: 150px 150px 0 150px;
@@ -645,7 +659,8 @@ footer .copyright{
 }
 /* About Page */
 #page-header.about-header{
-    background-image: url(img/about/banner.png);
+    background-image: url(img/about/banner2.jpg);
+    background-position: top;
 }
 #about-head{
     display: flex;
@@ -654,7 +669,8 @@ footer .copyright{
 
 #about-head img{
     width: 50%;
-    height: auto;
+    height: 500px;
+    object-fit: cover;
 }
 #about-head div{
     padding-left: 40px;
@@ -685,6 +701,10 @@ footer .copyright{
 #contact-details .details{
     width: 100%;
     /* width: 40%; */
+}
+#page-header.contact-header {
+    background-image: url(img/about/banner.jpg);
+    background-position: 10% 30%;
 }
 #contact-details .details span,
 #form-details form span{
@@ -768,6 +788,108 @@ footer .copyright{
     font-weight: 600;
     color: #000;
 }
+/* Cart page */
+#page-header.cart-header{
+    background-image: url(img/about/banner3.jpg);
+}
+#cart {
+    overflow-x: auto;
+}
+#cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart table img{
+    width: 70px;
+} 
+#cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+    background-color: rgb(221, 191, 165);
+}
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+#cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody td{
+    font-size: 13px;
+}
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
+#coupon h3,
+#subtotal h3{
+    padding-bottom: 15px;
+}
+#coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+    background-color: rgb(221, 191, 165);
+}
+#coupon button,
+#subtotal button{
+    background-color: #6F3619;
+    padding: 10px 20px;
+    color: #fff;
+}
+#subtotal{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#subtotal table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+
+}
+
 @media (max-width: 1050px) {
     .section-p1 {
         padding: 40px 40px;
@@ -849,6 +971,7 @@ footer .copyright{
         width: 70%;
     }
     /* Contact Page */
+    
     #form-details {
         padding: 40px;
     }
@@ -948,6 +1071,7 @@ footer .copyright{
     #about-head img {
         width: 100%;
         margin-bottom: 20px;
+        height: 200px;
     }
     #about-head div{
         padding-left: 0px;
@@ -977,6 +1101,18 @@ footer .copyright{
     #form-details form {
         width: 100%;
         margin-bottom: 30px;
+    }
+    /* Cart page */
+    #cart-add {
+        display: flex;
+        flex-direction: column;
+    }
+    #coupon {
+        width: 100%;
+    }
+    #subtotal {
+        width: 100%;
+        padding: 20px;
     }
 
 }

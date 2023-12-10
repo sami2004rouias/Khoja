@@ -18,10 +18,10 @@
             <ul id="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a  href="shop.html">Shop</a></li>
-                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+                <li><a  href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
@@ -31,66 +31,85 @@
 
         </div>
     </section>
-<!-- Fix start site with centred all content -->
 
-    <section id="page-header" class="blog-header">
-        <h2>Read More</h2>
-        <p>Find How Our Sesigner is Inspired</p>
+    <section id="page-header" class="cart-header">
+        <h2>Contact Us</h2>
+        <p>Leave A Message For A Question</p>
     </section>
-    <section id="blog">
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b1.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>The Material We Have Selected For Our Product</h4>
-                <p>The former Cotton-Jersey Zip-Up Hoodie has been updated to be more comfortable and fit for a more casual look. The hoodie is now a bit more casual and has a more casual fit.</p>
-                <a href="#">Continue Reading</a>
-            </div>
-            <h1>09/12</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b2.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>How To Style Our Product</h4>
-                <p>#####</p>
-                <a href="#">Continue Reading</a>
-            </div>
-            <h1>09/12</h1>
-        </div>
-        <div class="blog-box">
-            <div class="blog-img">
-                <img src="img/blog/b3.jpg" alt="">
-            </div>
-            <div class="blog-details">
-                <h4>How Collaborate With Us</h4>
-                <p>#####</p>
-                <a href="#">Continue Reading</a>
-            </div>
-            <h1>09/12</h1>
-        </div>
-        
-    </section>
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Golden Desert - Grey</td>
+                    <td>20€</td>
+                    <td><input type="number" min="1" value="1"></td>
+                    <td>20€</td>
 
-<section id="pagination" class="section-p1">
-    <a href="#">1</a>
-    <a href="#">2</a>
-    <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
-</section>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Serpent's Eyes - Cream</td>
+                    <td>20€</td>
+                    <td><input type="number" min="1" value="1"></td>
+                    <td>20€</td>
 
-    <section id="newslatter" class="section-p1 section-m1">
-        <div class="newstext">
-            <h4>Sign Up For Newslatter</h4>
-            <p>Get E-mail Updates About Our latest Shop And <span>Special Offers.</span></p>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Slaves of Waiting - Orange</td>
+                    <td>20€</td>
+                    <td><input type="number" min="1" value="1"></td>
+                    <td>20€</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Coupon Code">
+                <button type="submit" class="normal">Apply</button>
+            </div>
         </div>
-        <div class="form">
-            <input type="text" placeholder="Your E-mail Address">
-            <button class="normal">Sign Up</button>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>60€</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>60€</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed To Checkout</button>
         </div>
     </section>
-    
     <footer class="section-p1">
         <div class="col">
             <img class="logo" src="img/logo.png" alt="">
@@ -138,8 +157,6 @@
             <p>© 2023, Khoja</p>
         </div>
     </footer>
-
-
     <script src="script.js"></script>
 </body>
 
