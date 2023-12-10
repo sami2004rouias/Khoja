@@ -42,12 +42,6 @@
                 <div class="small-img-col">
                     <img src="img/products/f1 5.jpg" width="100%" class="small-img" alt="">
                 </div>
-                <div class="small-img-col">
-                    <img src="img/products/f2.jpg" width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="img/products/f3.jpg" width="100%" class="small-img" alt="">
-                </div>
 
 
             </div>
@@ -58,13 +52,27 @@
             <h4>Men's Fasshion T-Shirt</h4>
             <h2>20€</h2>
             <select>
-                <option>Select Size</option>
+                <option style="display:none" >Select Size</option>
                 <option>S</option>
                 <option>M</option>
                 <option>L</option>
                 <option>XL</option>
                 <option>XXL</option>
             </select>
+            <div class="color-group">
+                <div>
+                    <img src="img/color/grey.png" alt="" width="40px">
+                    <span>Grey</span>
+                </div>
+                <div>
+                    <img src="img/color/cream.png" alt="" width="40px">
+                    <span>Cream</span>
+                </div>
+                <div>
+                    <img src="img/color/orange.png" alt="" width="40px">
+                    <span>Orange</span>
+                </div>
+            </div>
             <input type="number" min="1" value="1">
             <button class="normal">Add To Cart</button>
             <h4>Product Details</h4>
@@ -226,12 +234,6 @@
         }
         smallimg[1].onclick = function () {
             MainImg.src = smallimg[1].src;
-        }
-        smallimg[2].onclick = function () {
-            MainImg.src = smallimg[2].src;
-        }
-        smallimg[3].onclick = function () {
-            MainImg.src = smallimg[3].src;
         }
     </script>
     <script src="script.js"></script>
